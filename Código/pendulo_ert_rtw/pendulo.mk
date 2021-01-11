@@ -2,7 +2,7 @@
 ## Makefile generated for component 'pendulo'. 
 ## 
 ## Makefile     : pendulo.mk
-## Generated on : Sat Dec 19 18:28:59 2020
+## Generated on : Sun Jan 10 14:18:23 2021
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/pendulo.elf
 ## Product type : executable
 ## 
@@ -21,7 +21,7 @@ MAKEFILE                  = pendulo.mk
 MATLAB_ROOT               = D:/ProgramFiles/MATLAB/R2020b
 MATLAB_BIN                = D:/ProgramFiles/MATLAB/R2020b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/aleca/Desktop/Matlab/INGENI~1/TRABAJ~1/PID
+START_DIR                 = C:/Users/aleca/Desktop/Matlab/INGENI~1/TRABAJ~1/CDIGO~1
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0

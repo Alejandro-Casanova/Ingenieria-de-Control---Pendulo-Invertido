@@ -33,11 +33,23 @@ unsigned int rotBnew = 0;
 void dorotA() {
   rotBnew^rotAold ? rotPos++ : rotPos--;
   rotAold = digitalRead(rotA);
+    
+    if(rotPos <= -2400){
+        rotPos = rotPos + 2400;
+    }else if(rotPos >= 2400){
+        rotPos = rotPos - 2400;
+    }
 }
 // Interrupt on B changing state
 void dorotB() {
   rotBnew = digitalRead(rotB);
   rotBnew^rotAold ? rotPos++ : rotPos--;
+    
+    if(rotPos <= -2400){
+        rotPos = rotPos + 2400;
+    }else if(rotPos >= 2400){
+        rotPos = rotPos - 2400;
+    }
 }
 
 // Interrupt on A changing state
@@ -80,8 +92,15 @@ if (xD[0]==1) {
     if(reset[0]){
         rotPos=0;   
     }  
-       rotpos[0]=rotPos;
-       linpos[0]=linPos;
+//     if(rotPos <= -2400) {
+//         rotPos = rotPos + 2400;
+//     }
+//     if(rotpos >= 2400) {
+//         rotPos = rotPos - 2400;
+//     }
+    rotpos[0]=rotPos;
+    linpos[0]=linPos;
+    
     #endif
 }
 /* %%%-SFUNWIZ_wrapper_Outputs_Changes_END --- EDIT HERE TO _BEGIN */

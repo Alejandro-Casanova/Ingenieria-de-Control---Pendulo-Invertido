@@ -28,39 +28,35 @@
     ;%
     ;% Auto data (ksw2cdwrtd)
     ;%
-      section.nData     = 4;
-      section.data(4)  = dumData; %prealloc
+      section.nData     = 2;
+      section.data(2)  = dumData; %prealloc
       
-	  ;% ksw2cdwrtd.CompareToConstant_const
+	  ;% ksw2cdwrtd.Constant9_Value
 	  section.data(1).logicalSrcIdx = 0;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% ksw2cdwrtd.Delay_InitialCondition
+	  ;% ksw2cdwrtd.Constant8_Value
 	  section.data(2).logicalSrcIdx = 1;
 	  section.data(2).dtTransOffset = 1;
-	
-	  ;% ksw2cdwrtd.Constant9_Value
-	  section.data(3).logicalSrcIdx = 2;
-	  section.data(3).dtTransOffset = 2;
-	
-	  ;% ksw2cdwrtd.Constant8_Value
-	  section.data(4).logicalSrcIdx = 3;
-	  section.data(4).dtTransOffset = 3;
 	
       nTotData = nTotData + section.nData;
       paramMap.sections(1) = section;
       clear section
       
-      section.nData     = 2;
-      section.data(2)  = dumData; %prealloc
+      section.nData     = 3;
+      section.data(3)  = dumData; %prealloc
       
-	  ;% ksw2cdwrtd.Constant6_Value
-	  section.data(1).logicalSrcIdx = 4;
+	  ;% ksw2cdwrtd.Constant10_Value
+	  section.data(1).logicalSrcIdx = 2;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% ksw2cdwrtd.Constant7_Value
-	  section.data(2).logicalSrcIdx = 5;
+	  ;% ksw2cdwrtd.Constant6_Value
+	  section.data(2).logicalSrcIdx = 3;
 	  section.data(2).dtTransOffset = 1;
+	
+	  ;% ksw2cdwrtd.Constant7_Value
+	  section.data(3).logicalSrcIdx = 4;
+	  section.data(3).dtTransOffset = 2;
 	
       nTotData = nTotData + section.nData;
       paramMap.sections(2) = section;
@@ -70,11 +66,11 @@
       section.data(2)  = dumData; %prealloc
       
 	  ;% ksw2cdwrtd.ManualSwitch2_CurrentSetting
-	  section.data(1).logicalSrcIdx = 6;
+	  section.data(1).logicalSrcIdx = 5;
 	  section.data(1).dtTransOffset = 0;
 	
 	  ;% ksw2cdwrtd.ManualSwitch3_CurrentSetting
-	  section.data(2).logicalSrcIdx = 7;
+	  section.data(2).logicalSrcIdx = 6;
 	  section.data(2).dtTransOffset = 1;
 	
       nTotData = nTotData + section.nData;
@@ -99,7 +95,7 @@
   ;%**************************
       
     nTotData      = 0; %add to this count as we go
-    nTotSects     = 2;
+    nTotSects     = 1;
     sectIdxOffset = 0;
     
     ;%
@@ -137,17 +133,6 @@
       sigMap.sections(1) = section;
       clear section
       
-      section.nData     = 1;
-      section.data(1)  = dumData; %prealloc
-      
-	  ;% nwk1xitj5gb.a5whhv1jmn
-	  section.data(1).logicalSrcIdx = 2;
-	  section.data(1).dtTransOffset = 0;
-	
-      nTotData = nTotData + section.nData;
-      sigMap.sections(2) = section;
-      clear section
-      
     
       ;%
       ;% Non-auto Data (signal)
@@ -166,8 +151,8 @@
   ;%*******************
       
     nTotData      = 0; %add to this count as we go
-    nTotSects     = 6;
-    sectIdxOffset = 2;
+    nTotSects     = 5;
+    sectIdxOffset = 1;
     
     ;%
     ;% Define dummy sections & preallocate arrays
@@ -237,30 +222,19 @@
       dworkMap.sections(4) = section;
       clear section
       
-      section.nData     = 1;
-      section.data(1)  = dumData; %prealloc
-      
-	  ;% pdyhr2xaxvi.ct50o5qnnb
-	  section.data(1).logicalSrcIdx = 5;
-	  section.data(1).dtTransOffset = 0;
-	
-      nTotData = nTotData + section.nData;
-      dworkMap.sections(5) = section;
-      clear section
-      
       section.nData     = 2;
       section.data(2)  = dumData; %prealloc
       
 	  ;% pdyhr2xaxvi.gplumspslk
-	  section.data(1).logicalSrcIdx = 6;
+	  section.data(1).logicalSrcIdx = 5;
 	  section.data(1).dtTransOffset = 0;
 	
 	  ;% pdyhr2xaxvi.pd42hmercb
-	  section.data(2).logicalSrcIdx = 7;
+	  section.data(2).logicalSrcIdx = 6;
 	  section.data(2).dtTransOffset = 1;
 	
       nTotData = nTotData + section.nData;
-      dworkMap.sections(6) = section;
+      dworkMap.sections(5) = section;
       clear section
       
     
@@ -289,8 +263,8 @@
   ;%
 
 
-  targMap.checksum0 = 2334286978;
-  targMap.checksum1 = 3029687747;
-  targMap.checksum2 = 71516688;
-  targMap.checksum3 = 409501285;
+  targMap.checksum0 = 2936777535;
+  targMap.checksum1 = 638809527;
+  targMap.checksum2 = 3317582288;
+  targMap.checksum3 = 3202547420;
 

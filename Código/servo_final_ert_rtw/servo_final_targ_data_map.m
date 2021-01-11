@@ -5,7 +5,7 @@
   ;%***********************
       
     nTotData      = 0; %add to this count as we go
-    nTotSects     = 5;
+    nTotSects     = 4;
     sectIdxOffset = 0;
     
     ;%
@@ -165,38 +165,27 @@
       paramMap.sections(3) = section;
       clear section
       
-      section.nData     = 1;
-      section.data(1)  = dumData; %prealloc
-      
-	  ;% nosh5pssab.Delay_InitialCondition
-	  section.data(1).logicalSrcIdx = 29;
-	  section.data(1).dtTransOffset = 0;
-	
-      nTotData = nTotData + section.nData;
-      paramMap.sections(4) = section;
-      clear section
-      
       section.nData     = 4;
       section.data(4)  = dumData; %prealloc
       
 	  ;% nosh5pssab.Constant1_Value_flqgqjzvjr
-	  section.data(1).logicalSrcIdx = 30;
+	  section.data(1).logicalSrcIdx = 29;
 	  section.data(1).dtTransOffset = 0;
 	
 	  ;% nosh5pssab.Constant_Value_dtwubeuw2e
-	  section.data(2).logicalSrcIdx = 31;
+	  section.data(2).logicalSrcIdx = 30;
 	  section.data(2).dtTransOffset = 1;
 	
 	  ;% nosh5pssab.Memory_InitialCondition
-	  section.data(3).logicalSrcIdx = 32;
+	  section.data(3).logicalSrcIdx = 31;
 	  section.data(3).dtTransOffset = 2;
 	
 	  ;% nosh5pssab.Enable_Value
-	  section.data(4).logicalSrcIdx = 33;
+	  section.data(4).logicalSrcIdx = 32;
 	  section.data(4).dtTransOffset = 3;
 	
       nTotData = nTotData + section.nData;
-      paramMap.sections(5) = section;
+      paramMap.sections(4) = section;
       clear section
       
     
@@ -300,7 +289,7 @@
   ;%*******************
       
     nTotData      = 0; %add to this count as we go
-    nTotSects     = 10;
+    nTotSects     = 9;
     sectIdxOffset = 2;
     
     ;%
@@ -364,38 +353,31 @@
       dworkMap.sections(3) = section;
       clear section
       
-      section.nData     = 4;
-      section.data(4)  = dumData; %prealloc
+      section.nData     = 5;
+      section.data(5)  = dumData; %prealloc
       
 	  ;% l01m0lxaz1s.jcvk0avd5c.LoggedData
 	  section.data(1).logicalSrcIdx = 5;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% l01m0lxaz1s.mi5uq4hcvu.LoggedData
+	  ;% l01m0lxaz1s.hlecyrsj4d.LoggedData
 	  section.data(2).logicalSrcIdx = 6;
 	  section.data(2).dtTransOffset = 1;
 	
-	  ;% l01m0lxaz1s.eavl1htium.LoggedData
+	  ;% l01m0lxaz1s.mi5uq4hcvu.LoggedData
 	  section.data(3).logicalSrcIdx = 7;
-	  section.data(3).dtTransOffset = 2;
+	  section.data(3).dtTransOffset = 4;
+	
+	  ;% l01m0lxaz1s.eavl1htium.LoggedData
+	  section.data(4).logicalSrcIdx = 8;
+	  section.data(4).dtTransOffset = 5;
 	
 	  ;% l01m0lxaz1s.ombk0l1em3.LoggedData
-	  section.data(4).logicalSrcIdx = 8;
-	  section.data(4).dtTransOffset = 3;
+	  section.data(5).logicalSrcIdx = 9;
+	  section.data(5).dtTransOffset = 6;
 	
       nTotData = nTotData + section.nData;
       dworkMap.sections(4) = section;
-      clear section
-      
-      section.nData     = 1;
-      section.data(1)  = dumData; %prealloc
-      
-	  ;% l01m0lxaz1s.ml4iwcv4c4
-	  section.data(1).logicalSrcIdx = 9;
-	  section.data(1).dtTransOffset = 0;
-	
-      nTotData = nTotData + section.nData;
-      dworkMap.sections(5) = section;
       clear section
       
       section.nData     = 1;
@@ -406,7 +388,7 @@
 	  section.data(1).dtTransOffset = 0;
 	
       nTotData = nTotData + section.nData;
-      dworkMap.sections(6) = section;
+      dworkMap.sections(5) = section;
       clear section
       
       section.nData     = 1;
@@ -417,7 +399,7 @@
 	  section.data(1).dtTransOffset = 0;
 	
       nTotData = nTotData + section.nData;
-      dworkMap.sections(7) = section;
+      dworkMap.sections(6) = section;
       clear section
       
       section.nData     = 4;
@@ -440,7 +422,7 @@
 	  section.data(4).dtTransOffset = 3;
 	
       nTotData = nTotData + section.nData;
-      dworkMap.sections(8) = section;
+      dworkMap.sections(7) = section;
       clear section
       
       section.nData     = 1;
@@ -451,7 +433,7 @@
 	  section.data(1).dtTransOffset = 0;
 	
       nTotData = nTotData + section.nData;
-      dworkMap.sections(9) = section;
+      dworkMap.sections(8) = section;
       clear section
       
       section.nData     = 1;
@@ -462,7 +444,7 @@
 	  section.data(1).dtTransOffset = 0;
 	
       nTotData = nTotData + section.nData;
-      dworkMap.sections(10) = section;
+      dworkMap.sections(9) = section;
       clear section
       
     
@@ -491,8 +473,8 @@
   ;%
 
 
-  targMap.checksum0 = 3599664613;
-  targMap.checksum1 = 3239003570;
-  targMap.checksum2 = 2955953094;
-  targMap.checksum3 = 701347178;
+  targMap.checksum0 = 4076960217;
+  targMap.checksum1 = 188615970;
+  targMap.checksum2 = 825088102;
+  targMap.checksum3 = 2282883446;
 
